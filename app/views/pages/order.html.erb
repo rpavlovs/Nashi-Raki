@@ -1,0 +1,34 @@
+<h1>Order</h1>
+
+<table border="1">
+  <tr>
+    <qty> Количество раков
+    <%= select_tag(:amount_id, options_for_select([['10', 1], ['7', 2], ['5', 2], ['3', 2]], 1)) %>
+    </qty>
+    <size> Калибр раков
+    <%= select_tag(:amount_id, options_for_select([['Big', 1], ['Small', 2]], 1)) %>
+    </size>
+    <kind>
+      <div>
+        <%= radio_button_tag(:kind, "live") %>
+        <%= label_tag(:live, "Живые") %>
+        <%= radio_button_tag(:kind, "cooked") %>
+        <%= label_tag(:cooked, "Вареные") %>
+      </div>
+    </kind>
+  </tr>
+  <tr>
+    <div>
+    Дата доставки
+    <%= select_date Date.today, :prefix => :start_date %>
+    <div>
+  </tr>
+</table>
+
+  <%= form_tag(home_path, :method => "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+
+<% end %>
+

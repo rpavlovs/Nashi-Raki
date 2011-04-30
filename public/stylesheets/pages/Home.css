@@ -1,0 +1,4 @@
+body {
+    background: url('/images/header.png') no-repeat top center, url('/images/footer.png') no-repeat bottom center;
+}
+

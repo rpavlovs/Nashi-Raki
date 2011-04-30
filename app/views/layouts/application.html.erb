@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Наши Раки | <%= @rutitle %></title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="round">
+        <ul>
+          <li><%= link_to "ГЛАВНАЯ", root_path %></li>
+          <li><%= link_to "О НАС", about_path %></li>
+          <li><%= link_to "КОНТАКТЫ", contact_path %></li>
+          <li><%= link_to "ПРАЙС-ЛИСТ", price_path %></li>
+          <li><%= link_to "ОНЛАЙН ЗАКАЗ", order_path %></li>
+          <li><%= link_to "РЕЦЕПТЫ", recepies_path %></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <%= yield %>
+    </section>
+  </div>
+</body>
+</html>
+

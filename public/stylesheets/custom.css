@@ -1,0 +1,127 @@
+.container {
+  position: center;
+  width: 950px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 950px;
+  background: url('/images/header.png') no-repeat top center;
+}
+
+
+section {
+  height: 100%;
+  margin-top: 200px;
+  font-size: 110%;
+  padding: 20px;
+}
+
+section h1 {
+  font-size: 200%;
+  color: #A5BE9B;
+}
+
+section img {
+  text-align: middle;
+  box-shadow: 3px 3px 10px #777;
+  -webkit-box-shadow: 3px 3px 10px #777;
+  -moz-box-shadow: 3px 3px 10px #777;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+/* Navigation */
+
+nav {
+  float: center;
+  margin-top: 0.5em;
+  font-size: 200%;
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0px 0px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 2px 5px;
+  font-weight: bold;
+  color: #e31e25;
+  text-shadow: #fff 0 0 4px;
+}
+
+nav ul li a:visited {
+  color: #e31e25;
+}
+
+nav ul li a:hover {
+  text-decoration: inherit;
+  color: #e31e25;
+}
+
+nav ul li a:active {
+  text-decoration: inherit;
+  color: #e31e25;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.semiround {
+  -moz-border-radius-bottomright:    10px;
+  -webkit-border-radius-bottomright: 10px;
+  border-bottom-right-radius:        10px;
+  -moz-border-radius-topleft:    10px;
+  -webkit-border-radius-topleft: 10px;
+  border-top-left-radius:        10px;
+}
+
+
+.leftround {
+  -moz-border-radius-bottomleft:    10px;
+  -webkit-border-radius-bottomleft: 10px;
+  border-bottom-left-radius:        10px;
+  -moz-border-radius-topleft:    10px;
+  -webkit-border-radius-topleft: 10px;
+  border-top-left-radius:        10px;
+}
+
+.rightround {
+  -moz-border-radius-bottomright:    10px;
+  -webkit-border-radius-bottomright: 10px;
+  border-bottom-right-radius:        10px;
+  -moz-border-radius-topright:    10px;
+  -webkit-border-radius-topright: 10px;
+  border-top-right-radius:        10px;
+}
+
