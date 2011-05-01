@@ -57,6 +57,7 @@ nav {
 }
 
 nav ul {
+  position: 50%;
   margin: 0;
   padding: 0px 0px;
 }
